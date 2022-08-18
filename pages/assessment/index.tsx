@@ -972,6 +972,19 @@ const Syndrom = () => {
                   <ReactMarkdown className="list-decimal text-lg leading-relaxed">
                     {syndrom.description || ''}
                   </ReactMarkdown>
+                  {getSyndrom.topic === 'กลุ่มอาการทั่วไปของร่างกาย' && (
+                    <img
+                      src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=https://drive.google.com/file/d/10Wl7gRfhESkXyBD5cgyLyVJZdNqa7a4h/view&choe=UTF-8"
+                      className="mt-6 w-full"
+                      alt="qrcode"
+                    />
+                  )}
+                  <div className='flex gap-1 justify-center text-xl mb-6'>
+                    <p>หรือ</p>
+                    <a className='underline' href="https://drive.google.com/file/d/10Wl7gRfhESkXyBD5cgyLyVJZdNqa7a4h/view" target="_blank" rel="noreferrer">
+                      คลิกลิงก์
+                    </a>
+                  </div>
                   <button
                     onClick={handleNext}
                     className="btn bg-primary text-lg text-white"
@@ -986,7 +999,7 @@ const Syndrom = () => {
               {/* <ReactMarkdown className="list-decimal text-lg leading-relaxed">
                 {getSyndrom?.description || ''}
               </ReactMarkdown> */}
-              <div className='space-y-3'>
+              <div className="space-y-3">
                 {JSON.stringify(getSyndrom?.description || '')
                   .replace(/"/g, '')
                   .split('\\n')
@@ -997,7 +1010,7 @@ const Syndrom = () => {
 
               <button
                 onClick={handleNext}
-                className="btn bg-primary text-lg text-white mt-12"
+                className="btn mt-12 bg-primary text-lg text-white"
               >
                 เสร็จสิ้น
               </button>
