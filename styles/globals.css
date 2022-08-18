@@ -4,11 +4,44 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .container {
+    @apply max-w-2xl mx-auto px-6;
+  }
+
+  .btn {
+    @apply w-full rounded-lg shadow-lg py-3 transition-all ease-in-out disabled:bg-opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .input {
+    @apply w-full rounded-lg border-2 focus:ring-1 focus:ring-primary border-gray-300 px-4 py-2 outline-none focus:border-primary invalid:text-pink-600 invalid:placeholder:text-pink-400 invalid:border-pink-500 focus:invalid:border-pink-500 focus:invalid:ring-pink-500;
+  }
+}
+
+@layer base {
+  h1 {
+    @apply text-3xl font-semibold;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold;
+  }
+
+  h3 {
+    @apply text-xl font-medium;
+  }
+
+  h4 {
+    @apply text-lg font-medium;
+  }
+}
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Kanit', sans-serif;;
+  font-family: 'Kanit', sans-serif;
 }
 
 a {
@@ -18,4 +51,10 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: 'Kanit', sans-serif !important;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }

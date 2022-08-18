@@ -5,7 +5,8 @@ function document() {
     <Html>
       <Head>
         <link rel="manifest" href="/manifest.json" />
-        {/* <link rel="apple-touch-icon" href="/icon.png"></link> */}
+        <link rel="apple-touch-icon" href="/logo.png"></link>
+        <link rel="icon" type="image/x-icon" href="/logo.png"></link>
         <meta name="theme-color" content="#B2B5FD" />
       </Head>
       <Main />
