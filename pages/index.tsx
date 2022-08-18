@@ -14,6 +14,19 @@ const Home: NextPage = () => {
           อวัยวะทำให้เกิดการอักเสบในร่างกายเป็นผลให้อวัยวะนั้นๆ
           ได้รับความเสียหาย ส่งผลกระทบไปทั่วร่างกาย
         </p>
+        <div>
+          <h3 className="text-center mb-3">วัตถุประสงค์ในการจัดทำ Application</h3>
+          <ol className="ml-3 list-outside list-decimal pb-6">
+            <li>
+              &#41; เพื่อให้ผู้รับบริการที่มีอาการของภาวะ Long COVID
+              มีความรู้ความเข้าใจในอาการและการดูเเลตนเอง
+            </li>
+            <li>
+              &#41; เพื่อประเมินภาวะความวิตกกังวลของการสัมผัสเชื้อไวรัส COVID-19
+              หลังใช้นวัตกรรม
+            </li>
+          </ol>
+        </div>
         <Link href="/assessment">
           <button className="btn bg-primary text-lg font-bold text-white">
             ทำแบบประเมิน
