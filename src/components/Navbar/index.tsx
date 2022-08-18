@@ -10,8 +10,8 @@ const Navbar: FC<Props> = ({ title = 'Life of long COVID-19' }) => {
   const router = useRouter()
   const handleClick = () => {
     const uid = localStorage.getItem('uid')
-
-    if (!uid) router.push('/login')
+    console.log(uid)
+    if (!uid) return router.push('/login')
     router.push('/admin')
   }
 
